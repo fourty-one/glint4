@@ -1,0 +1,99 @@
+.hero {
+	width: 100vw;
+	height: 100vh;
+	min-height: 600px;
+	background-image: url('../img/hero-bg.jpeg');
+
+	&-container {
+		height: 100%;
+	}
+
+	&__title {
+		font-size: 3.8rem;
+		width: 100%;
+		max-width: 50rem;
+		line-height: 5rem;
+
+		@include for-phone {    
+	      	width: 80%;
+			margin: 2rem auto;
+			text-align: center;
+			font-size: 1.5rem;
+			line-height: 2.3rem;
+	   	}
+
+	   	@include for-tablet {    
+	   		width: 90%;
+			font-size: 2.3rem;
+			line-height: 2.3rem;
+	   	}
+	}
+
+	&__subtitle {
+		padding-top: 20rem;
+		font-size: 1rem;
+		letter-spacing: 2px;
+		margin-bottom: 0.5rem;
+
+		@include for-phone {    
+	      	text-align: center;
+	      	padding-top: 14rem;
+	   	}
+	}
+
+	&__buttons {
+		margin-top: 5rem;
+
+		@include for-phone {    
+	      	width: 80%;
+			margin: 0 auto;
+			flex-direction: column;
+	   }
+	}
+
+	&__button {
+		padding: 1rem 2.8rem;
+		font-size: 0.8rem;
+		letter-spacing: 2px;
+		margin-right: 1rem;
+		border: 2px solid var(--color-white);
+		transition: color 1s, background-color 1s;
+
+		@include for-phone {    
+	      	width: 100%;
+	   	}
+
+		&:hover {
+			color: var(--color-black);
+			background-color: var(--color-white);
+		}
+
+	   	&:first-child {
+	    	@include for-phone {    
+		      	margin-bottom: 1rem;
+		   	}
+		}
+	}
+}
+
+.hero-socials {
+	position: absolute;
+	top: 58%;
+	right: 3.4%;
+	transform: translateY(-50%);
+
+	@include for-phone {    
+      opacity: 0;
+   }
+
+	&__item {
+		margin-bottom: 1rem;
+	}
+
+	&__icon {
+		font-size: 1rem;
+		padding: 0.4rem;
+		border-radius: 50%;
+		border: 2px solid var(--color-white);
+	}
+}

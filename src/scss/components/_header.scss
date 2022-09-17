@@ -1,0 +1,24 @@
+.header {
+	position: absolute;
+	width: 100%;
+	padding: 3rem;
+	z-index: 5;
+
+	&__logo {
+		width: 6rem;
+	}
+
+	&__button {
+		position: fixed;
+		top: 3rem;
+		right: 3rem;
+		background-color: var(--color-black);
+		padding: 0.2rem 0.6rem;
+		letter-spacing: 2px;
+	}
+
+	&__icon {
+		margin-left: 1rem;
+		font-size: 2.2rem;
+	}
+}
