@@ -1,0 +1,79 @@
+.about {
+	background-color: var(--color-chateau-green);
+	padding-bottom: 10rem;
+
+	&__section-description {
+		font-size: 5rem;
+
+		@include for-phone {    
+	      	font-size: 2.5rem;
+	   	}
+	}
+
+	&__info {
+		margin-top: 7rem;
+		width: 75%;
+		font-size: 1.5rem;
+		line-height: 2.7rem;
+
+		@include for-phone {
+			margin-top: 4rem;    
+	      	font-size: 1rem;
+	      	width: 98%;
+			line-height: 1.5rem;
+	   	}
+	}
+
+	&__stats {
+		width: 90%;
+		margin-top: 7rem;
+
+		@include for-phone {
+			margin-top: 4rem;
+	   	}
+	}
+}
+
+.stats {
+	@include for-phone {
+		flex-direction: column;
+	}
+
+	&__item {
+		@include for-tablet {    
+	   		width: 45%;
+	   	}
+
+	   	&:not(:last-child) {
+	   		@include for-phone {
+				margin-bottom: 0.7rem;
+	   		}
+
+	   		&:after {
+					@include for-desktop {
+					content: '';
+					position: absolute;
+					top: 0;
+					right: -50px;
+					height: 140px;
+					transform: traslateY(-50%);
+					width: 1px;
+					background-color: rgba(255, 255, 255, 0.25);
+	   			}
+			}
+	   	}
+	}
+
+
+	&__count {
+		color: var(--color-white);
+		font-size: 5rem;
+		letter-spacing: 7px;
+		margin-bottom: 1rem;
+	}
+
+	&__name {
+		font-size: 1rem;
+		letter-spacing: 1px;
+	}
+}
