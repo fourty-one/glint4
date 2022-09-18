@@ -1,0 +1,114 @@
+.contact {
+	background-size: cover;
+	padding-bottom: 10rem;
+	background-image: url('../img/contact-bg.jpeg');
+
+	&__window {
+		margin-top: 7rem;
+		width: 80%;
+
+		@include for-phone {
+			width: 100%;
+			flex-direction: column;
+	   	}
+	}
+
+	&__subtitle {
+		margin-bottom: 3.4rem;
+		font-size: 1rem;
+
+		@include for-phone {
+			text-align: center;
+			margin-top: 2rem;
+	   	}
+	}
+
+	&__form {
+		width: 65%;
+		padding: 3.8rem;
+		background-color: rgba(0, 0, 0, 0.4);
+		font-size: 0.8rem;
+
+		@include for-phone {
+			width: 100%;
+			padding: 1rem;
+	   	}
+	}
+
+	&__info {
+		width: 35%;
+		padding: 3.8rem;
+		background-color: var(--color-cod-gray);
+
+		@include for-phone {
+			width: 100%;
+			padding: 1rem;
+
+	   	}
+	}
+
+	&__input {
+		margin-top: 1.2rem;
+		padding: 15px 10px;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+		transition: border 0.7s color 0.7s;
+
+		&:focus {
+			border-bottom: 1px solid var(--color-chateau-green);
+			transition: border 0.5s;
+		}
+	}
+
+	&__button {
+		margin-top: 3rem;
+		background-color: var(--color-chateau-green);
+		padding: 1rem;
+		width: 100%;
+		font-size: 0.8rem;
+		letter-spacing: 2px;
+		opacity: 1;
+		transition: opacity 1s;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+
+	&__socials {
+		margin-top: 3rem;
+	}
+}
+
+.info-list {
+	&__title, &__text {
+		@include for-phone {
+			text-align: center;
+		}
+	}
+
+	&__item {
+		margin-bottom: 1.4rem;
+	}
+
+	&__title {
+		font-size: 1rem;
+		padding-bottom: 1.2rem;
+	}
+
+	&__text {
+		color: rgba(255, 255, 255, 0.5);
+		font-size: 0.8rem;
+		margin-bottom: 0.8rem;
+	}
+}
+
+.contact-socials {
+	@include for-phone {
+		margin: 0 auto;
+		padding-bottom: 1rem;
+	 }
+
+	&__item {
+		margin-right: 5px;
+	}
+}
