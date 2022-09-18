@@ -1,0 +1,58 @@
+.services {
+	padding-bottom: 6rem;
+	background-color: var(--color-white);
+}
+
+.services-list {
+	margin-top: 7rem;
+
+	@include for-phone {    
+	    flex-direction: column;
+	}
+
+	&__item {
+		width: 45%;
+		margin-bottom: 3rem;
+
+		@include for-phone {    
+	    	width: 98%;
+	    	text-align: center;
+		}
+	}
+}
+
+.service {
+	@include for-phone {    
+	    flex-direction: column;
+	}
+
+	&__icon {
+		margin-right: 1.4rem;
+		font-size: 3.4rem;
+
+		@include for-phone {    
+	    	margin-right: 0;
+	    	margin-bottom: 1rem;
+		}
+	}
+
+	&__name {
+		font-size: 2.2rem;
+
+		@include for-phone {    
+	    	font-size: 2rem;
+		}
+	}
+
+	&__info {
+		margin-top: 1.6rem;
+		color: var(--color-emperor);
+		font-size: 1.1rem;
+		line-height: 2rem;
+
+		@include for-phone {    
+	    	font-size: 1rem;
+	    	line-height: 1.8rem;
+		}
+	}
+}
