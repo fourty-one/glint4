@@ -1,0 +1,103 @@
+.footer {
+	background-color: var(--color-cod-gray);
+	padding-bottom: 7rem;
+
+	&-container {
+		height: 23rem;
+		padding: 0 8rem;
+		padding-top: 5rem;
+		column-gap: 40px;
+		row-gap: 1rem;
+
+		@include for-phone {    
+	      	height: auto;
+	      	row-gap: 2rem;
+	      	padding: 5rem 2rem;
+	   	}
+
+	   	@include for-tablet {    
+	      	height: 25rem;
+	   	}
+	}
+
+	&__logo {
+		width: 7rem;
+	}
+
+	&__subtitle {
+		font-size: 1rem;
+		padding: 1rem 0;
+
+		@include for-phone {    
+	      	padding: 0;
+	   	}
+	}
+
+	&__text {
+		width: 45%;
+		font-size: 0.9rem;
+		line-height: 1.8rem;
+
+		@include for-phone {    
+	      	width: 100%;
+	   	}
+
+	   	@include for-tablet {    
+	      	line-height: 1.4rem;
+	   	}
+	}
+
+	&__button {
+		background-color: var(--color-chateau-green);
+		padding: 1.2rem;
+		font-size: 0.8rem;
+		letter-spacing: 2px;
+		opacity:  1;
+		transition: opacity 1s;
+
+		&:hover {
+			opacity: 0.7;
+		}
+
+		@include for-phone {    
+	      	width: 100%;
+	      	margin-top: 1rem;
+	   	}
+	}
+
+	&__input {
+		padding: 1.3rem 0;
+		padding-right: 1rem;
+		background-color: rgba(0, 0, 0, 0.15);
+		font-size: 0.8rem;
+
+		@include for-phone {    
+	      	width: 100%;
+	      	text-align: center;
+	   	}
+	}
+
+	&__icon {
+		padding: 1rem;
+		background-color: rgba(0, 0, 0, 0.15);
+
+		@include for-phone {    
+	      	display: none;	   	
+	    }
+	}
+
+	&__input-wrapper {
+		width: 100%;
+
+		@include for-phone {    
+	      	flex-direction: column;
+	   	}
+	} 
+
+	&__copyright {
+		position: absolute;
+		left: 50%;
+		bottom: -5rem;
+		transform: translateX(-50%);
+	}
+}
