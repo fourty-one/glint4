@@ -1,0 +1,91 @@
+.clients {
+	padding-bottom: 7rem;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.clients-slider {
+	margin: 0 auto;
+	margin-top: 5rem;
+	width: 90%;
+	padding-bottom: 5rem;
+	overflow: hidden;
+
+	.swiper-slide > i {
+		opacity: 0.4;
+  		font-size: 9rem;
+	}
+
+	.swiper-pagination-bullet {
+		background-color: var(--color-chateau-green);
+	  	width: 12px;
+	  	height: 12px;
+	  	margin: 0 10px !important;
+	}
+}
+
+.testimonals-slider {
+	width: 90%;
+  	overflow: hidden;
+  	margin-top: 7rem;
+
+  	@include for-phone {
+		width: 95%;
+	 }
+
+	.swiper-button-prev:after,
+	.swiper-button-next:after {
+		display: none;
+	}
+
+	.swiper-button-prev,
+	.swiper-button-next {
+		top: 25%;
+		color: var(--color-black);
+
+		& > i {
+			font-size: 2.2rem;
+		}
+
+		@include for-phone {    
+	      	display: none;
+	   	}
+	}
+}
+
+.testimonal {
+	&__author {
+		margin-top: 1.2rem;
+	}
+
+	.testimonal-author {
+		&__photo {
+			width: 6rem;
+			border-radius: 50%;
+		}
+
+		&__name {
+			margin-top: 1rem;
+			font-size: 1rem;
+		}
+
+		&__position {
+			margin-top: 0.5rem;
+			font-size: 0.8rem;
+		}
+	}
+
+	&__text {
+		font-size: 1.6rem;
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+		color: var(--color-emperor);
+		line-height: 55px;
+
+		@include for-phone {
+			width: 98%;
+			font-size: 1.2rem;
+			line-height: 2rem;
+		 }
+	}
+}
