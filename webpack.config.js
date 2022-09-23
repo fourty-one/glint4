@@ -36,14 +36,14 @@ module.exports = {
             test: /\.(png|svg|jpg|jpeg|gif)$/i,
             type: 'asset/resource',
             generator: {
-              filename: 'static/images/[name].[contenthash].[ext]'
+              filename: 'static/images/[name].[contenthash][ext]'
             }
           },
           {
             test: /\.(woff|woff2|eot|ttf|otf)$/i,
             type: 'asset/resource',
             generator: {
-              filename: 'static/fonts/[name].[contenthash].[ext]'
+              filename: 'static/fonts/[name].[contenthash][ext]'
             }
           },
           {
