@@ -7,16 +7,71 @@
 </head>
 <body>
 	<div class="site-container">
+		<div class="overlay" onclick="closeMenu()"></div>
 		<header class="header">
 			<div class="header__container header-container flex items-center space-between">
 				<img src="./img/glint-logo.png" alt="glint logo" class="header__logo">
-				<button class="header__button btn-reset flex items-center uppercase green semi-bold">
+				<button 
+					class="header__button btn-reset flex items-center uppercase green semi-bold"
+					 onclick="openMenu()"
+				>
 					Menu<i class="material-icons header__icon white">menu</i>
 				</button>
+				<nav class="header__nav nav flex flex-column">
+					<div class="header-cw-1 flex space-between items-center">
+						<h3 class="nav__title uppercase green bold">Navigation</h3>
+						<button class="close-menu-button btn-reset" onclick="closeMenu()">
+							<i class="material-icons nav__icon white">close</i>
+						</button>
+					</div>
+					<ul class="nav__list">
+						<li class="nav__item flex flex-column relative">
+							<a href="#hero" class="nav__link semi-bold white" onclick="closeMenu()">Home</a>
+						</li>
+						<li class="nav__item flex flex-column relative">
+							<a href="#about" class="nav__link semi-bold white" onclick="closeMenu()">About</a>
+						</li>
+						<li class="nav__item flex flex-column relative">
+							<a href="#services" class="nav__link semi-bold white" onclick="closeMenu()">Services</a>
+						</li>
+						<li class="nav__item flex flex-column relative">
+							<a href="#works" class="nav__link semi-bold white" onclick="closeMenu()">Works</a>
+						</li>
+						<li class="nav__item flex flex-column relative">
+							<a href="#clients" class="nav__link semi-bold white" onclick="closeMenu()">Clients</a>
+						</li>
+						<li class="nav__item flex flex-column relative">
+							<a href="#contact" class="nav__link semi-bold white" onclick="closeMenu()">Contact</a>
+						</li>
+					</ul>
+					<p class="nav__text emperor regular">
+						Perspiciatis hic praesentium nesciunt. 
+						Et neque a dolorum voluptatem porro iusto sequi 
+						veritatis libero enim. Iusto id suscipit veritatis 
+						neque reprehenderit.
+					</p>
+					<ul class="nav__socials nav-socials flex">
+						<li class="nav-socials__item">
+							<i class="material-icons nav-socials__icon emperor">facebook</i>
+						</li>
+						<li class="nav-socials__item">
+							<i class="material-icons nav-socials__icon emperor">facebook</i>
+						</li>
+						<li class="nav-socials__item">
+							<i class="material-icons nav-socials__icon emperor">facebook</i>
+						</li>
+						<li class="nav-socials__item">
+							<i class="material-icons nav-socials__icon emperor">facebook</i>
+						</li>
+						<li class="nav-socials__item">
+							<i class="material-icons nav-socials__icon emperor">facebook</i>
+						</li>
+					</ul>
+				</nav>
 			</div>
 		</header>
 		<main class="main">
-			<section class="hero bg-reset bg-shadow relative">
+			<section class="hero bg-reset bg-shadow relative" id="hero">
 				<div class="container hero-container">
 					<h2 class="hero__subtitle semi-bold emperor uppercase">Welcome to Glint</h2>
 					<h1 class="hero__title semi-bold white">
@@ -46,7 +101,7 @@
 					</ul>
 				</div>
 			</section>
-			<section class="about">
+			<section class="about" id="about">
 				<div class="container about-container flex flex-column items-center">
 					<h3 class="section-title about__section-title black">Hello There</h3>
 					<span class="section-description about__section-description white hline">
@@ -75,7 +130,7 @@
 					</ul>
 				</div>
 			</section>
-			<section class="services">
+			<section class="services" id="services">
 				<div class="container services-container flex flex-column items-center">
 					<h3 class="section-title services__section-title green">What We Do</h3>
 					<span class="section-description services__section-description hline">
@@ -169,7 +224,7 @@
 					</ul>
 				</div>
 			</section>
-			<section class="works relative">
+			<section class="works relative" id="works">
 				<div class="container works-container flex flex-column items-center">
 					<h3 class="section-title works__section-title green">Recent Works</h3>
 					<span class="section-description works__section-description white hline">
@@ -237,7 +292,7 @@
 					</ul>
 				</div>
 			</section>
-			<section class="clients">
+			<section class="clients" id="clients">
 				<div class="container clients-container flex flex-column items-center">
 					<h3 class="section-title clients__section-title green">Out Clients</h3>
 					<span class="section-description clients__section-description">
@@ -304,7 +359,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="contact bg-reset bg-shadow relative">
+			<section class="contact bg-reset bg-shadow relative" id="contact">
 				<div class="container contact-container flex flex-column items-center">
 					<h3 class="section-title contact__section-title green">Contact Us</h3>
 					<span class="section-description contact__section-description white">

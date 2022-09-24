@@ -59,6 +59,22 @@
   transition: opacity 1s, transform 1s;
 }
 
+.overlay {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 0;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.overlay-up {
+	z-index: 2;
+	opacity: 1;
+	transition: opacity 1s;
+}
+
 .section-title {
 	margin-top: 10rem;
 	text-transform: uppercase;
