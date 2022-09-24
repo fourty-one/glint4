@@ -30,14 +30,14 @@
 	}
 
 	&__subtitle {
-		padding-top: 25%;
+		padding-top: 15rem;
 		font-size: 1rem;
 		letter-spacing: 2px;
 		margin-bottom: 0.5rem;
 
-		@include for-phone {    
+		@include for-phone {   
+			padding-top: 7rem; 
 	      	text-align: center;
-	      	padding-top: 14rem;
 	   	}
 	}
 
