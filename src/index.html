@@ -366,18 +366,50 @@
 						Reach out for a new project or just say hello
 					</span>
 					<div class="contact__window flex white">
-						<form action="return false;" class="contact__form flex flex-column">
+						<form action="#" id="form" autocomplete="off" class="contact__form flex flex-column">
 							<h3 class="contact__subtitle semi-bold uppercase">Send up a message</h3>
-							<input type="text" class="contact__input" placeholder="Your Name">
-							<input type="text" class="contact__input" placeholder="Your Email">
-							<input type="text" class="contact__input" placeholder="Subject">
+							<label for="name">
+								<input 
+									type="text" 
+									class="contact__input" 
+									placeholder="Your Name"
+									name="name"
+	    							id="name"
+								>
+							</label>
+							<label for="email">
+								<input 
+									type="email" 
+									class="contact__input" 
+									placeholder="Your Email"
+									name="email"
+	    							id="email"
+								>
+							</label>
+							<label for="subject">
+								<input 
+									type="text" 
+									class="contact__input" 
+									placeholder="Subject"
+									name="subject"
+	    							id="subject"
+								>
+							</label>
 							<textarea 
 								class="contact__input contact__input--message"
 								cols="30" 
 								rows="10"
 								placeholder="Your Message"
+								name="message"
+    							id="message"
 							></textarea>
-							<buttom class="contact__button btn-reset uppercase semi-bold text-center" type="submit">Submit</buttom>
+							<button 
+								id="submit-btn"
+								class="contact__button btn-reset white uppercase semi-bold text-center" 
+								type="submit"
+							>
+								Submit
+							</button>
 						</form>
 						<div class="contact__info flex flex-column space-between">
 							<h3 class="contact__subtitle uppercase semi-bold">Contact info</h3>

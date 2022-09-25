@@ -12,6 +12,7 @@
     "css-loader": "^6.7.1",
     "html-loader": "^4.1.0",
     "html-webpack-plugin": "^5.5.0",
+    "just-validate": "^3.8.1",
     "material-icons": "^1.11.11",
     "mini-css-extract-plugin": "^2.6.1",
     "normalize-scss": "^7.0.1",
